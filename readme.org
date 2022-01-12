@@ -1,0 +1,31 @@
+
+* foo
+
+[[https://hackage.haskell.org/package/foo][https://img.shields.io/hackage/v/foo.svg]]
+[[https://github.com/tonyday567/foo/actions?query=workflow%3Ahaskell-ci][https://github.com/tonyday567/foo/workflows/haskell-ci/badge.svg]]
+
+~foo~ is a new package.
+
+* Usage
+
+#+begin_src haskell
+import Lib
+#+end_src
+
+#+begin_src haskell :results value
+:set prompt "> "
+:set -Wno-type-defaults
+:set -Wno-name-shadowing
+:set -XOverloadedStrings
+:set -XOverloadedLabels
+:set -XFlexibleContexts
+:set -XGADTs
+:set -XDataKinds
+#+end_src
+
+check
+
+#+begin_src haskell :results value :export both
+let x = "ok"
+putStrLn x
+#+begin_src
